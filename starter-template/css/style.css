@@ -1,0 +1,109 @@
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.nav-wrapper{
+  height: 50%;
+  padding-top: 1em;
+}
+
+.nav-link{
+  font-size: 1.5em;
+  font-family: poiret;
+}
+
+#section-title{
+  font-family: prisma;
+  color: white;
+}
+
+#my-pic{
+  float: left;
+  padding-right: 1em;
+}
+
+#contact-form{
+  margin: 0;
+  background: white;
+  opacity: .85;
+  /* min-width: 10em; */
+}
+
+
+#logo-container{
+  font-size: 3em;
+  font-family: poiret;
+}
+
+#title-wrapper{
+  border-bottom: 5px solid #4527a0;
+  margin: 0 1em 1em 0;
+}
+
+#main-text{
+  padding-left: 1em;
+  border: 2px solid #4527a0 ;
+  text-align: justify;
+  /* min-width: 100%; */
+  background:#616161;
+  color: white;
+  opacity: .85;
+}
+
+#my-brand-statement{
+  padding-right: 1em;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  flex: 1 0 auto;
+  margin: auto;
+}
+
+nav{
+  height: 6em;
+}
+
+form{
+  background: #616161;
+  padding: 2em;
+  width: 50em;
+}
+
+label{
+  color: white;
+}
+
+.btn{
+  background-color: #4527a0;
+  color: white;
+}
+
+#input-email, #input-password, #text-area{
+  background: white;
+  padding: .375rem .05rem;
+}
+
+
+@font-face {
+  font-family: prisma;
+  src: url(../fonts/Prisma.ttf);
+}
+
+@font-face {
+  font-family: poiret;
+  src: url(../fonts/PoiretOne-Regular.ttf);
+}
+

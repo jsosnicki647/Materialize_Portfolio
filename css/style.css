@@ -16,7 +16,7 @@
   font-family: poiret;
 }
 
-#section-title{
+.section-title{
   font-family: prisma;
   color: white;
 }
@@ -27,31 +27,36 @@
 }
 
 #contact-form{
-  margin: 0;
-  background: white;
-  opacity: .85;
-  /* min-width: 10em; */
+  margin: auto;
+  /* background: white;
+  opacity: .85; */
 }
 
+#index-banner{
+  min-width: 100%;
+}
 
 #logo-container{
   font-size: 3em;
   font-family: poiret;
 }
 
-#title-wrapper{
+.title-wrapper{
   border-bottom: 5px solid #4527a0;
   margin: 0 1em 1em 0;
 }
 
-#main-text{
+#main-text, #contact-form{
   padding-left: 1em;
   border: 2px solid #4527a0 ;
   text-align: justify;
-  /* min-width: 100%; */
   background:#616161;
   color: white;
   opacity: .85;
+}
+
+#contact-form{
+  display: none;
 }
 
 #my-brand-statement{
@@ -69,18 +74,14 @@ body {
 
 main {
   flex: 1 0 auto;
-  margin: auto;
+  /* margin: 0 10%; */
 }
 
 nav{
   height: 6em;
 }
 
-form{
-  background: #616161;
-  padding: 2em;
-  width: 50em;
-}
+
 
 label{
   color: white;
@@ -89,13 +90,23 @@ label{
 .btn{
   background-color: #4527a0;
   color: white;
+  margin: 1em 0;
 }
 
-#input-email, #input-password, #text-area{
+#input-email, #input-password{
   background: white;
-  padding: .375rem .05rem;
+  padding: .375rem;
+  width: 97%;
+  height: 20px;
+  display: block;
 }
 
+#text-area{
+  background: white;
+  height: 100px;
+  width: 98%;
+  display: block;
+}
 
 @font-face {
   font-family: prisma;

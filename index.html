@@ -1,49 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
   <title>Jesse Sosnicki | About</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
+
 <body>
   <header>
     <nav class="deep-purple darken-3" role="navigation">
-        <div class="nav-wrapper container">
-          <a id="logo-container" href="#" class="brand-logo">Jesse Sosnicki</a>
-          <ul class="right hide-on-med-and-down">
-            <li><a class="nav-link" href="#">About</a></li>
-            <li><a class="nav-link" href="contact.html">Contact</a></li>
-            <li><a class="nav-link" href="#">Portfolio</a></li>
-          </ul>
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">Jesse Sosnicki</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a class="nav-link about-page-link">About</a></li>
+          <li><a class="nav-link contact-page-link">Contact</a></li>
+          <li><a class="nav-link" href="#">Portfolio</a></li>
+        </ul>
 
-          <ul id="nav-mobile" class="sidenav">
-            <li><a href="#">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="#">Portfolio</a></li>
-          </ul>
-          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        </div>
+        <ul id="nav-mobile" class="sidenav">
+          <li><a class="about-page-link">About</a></li>
+          <li><a class="contact-page-link">Contact</a></li>
+          <li><a>Portfolio</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </div>
     </nav>
   </header>
 
   <main class="valign-wrapper">
-      <div class="section no-pad-bot valign" id="index-banner">
-        <div id="main-text" class="container">
-          <div id="title-wrapper">
-            <h1 id="section-title" class="header">About Me</h1>
-          </div>
-          <img id="my-pic" src="images/me.jpg">
-          <h5 id="my-brand-statement" class="header col s12 light">I am a Full Stack Web Developer with a background in Mathematics. My coding journey began with undergraduate and graduate level courses in both Java and SQL, as well as self-learning VBA. Throughout my tenure as a Data Analyst at KPMG, I’ve added value to my teams by developing time-saving and human-error-eliminating Excel Macros for many repeatable processes. I decided to hone my skills at Rutgers University’s Web Development Bootcamp, covering concepts in HTML, CSS, Javascript, and the MERN stack. My greatest strength is creative problem-solving, I am passionate about web technologies, and I have an eagerness for learning.</h5>
-          <br><br>
+    <div class="section no-pad-bot valign" id="index-banner">
+      <div id="main-text" class="container">
+        <div class="title-wrapper">
+          <h1 class="section-title header">About Me</h1>
         </div>
+        <img id="my-pic" src="images/me.jpg">
+        <h5 id="my-brand-statement" class="header col s12 light">I am a Full Stack Web Developer with a background
+          in
+          Mathematics. My coding journey began with undergraduate and graduate level courses in both Java and SQL,
+          as
+          well as self-learning VBA. Throughout my tenure as a Data Analyst at KPMG, I’ve added value to my teams by
+          developing time-saving and human-error-eliminating Excel Macros for many repeatable processes. I decided
+          to
+          hone my skills at Rutgers University’s Web Development Bootcamp, covering concepts in HTML, CSS,
+          Javascript,
+          and the MERN stack. My greatest strength is creative problem-solving, I am passionate about web
+          technologies, and I have an eagerness for learning.</h5>
+        <br><br>
       </div>
+      <div id="contact-form" class="container center-align">
+        <div class="title-wrapper">
+          <h1 class="section-title">Contact</h1>
+        </div>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email</label>
+            <input type="email" class="input-field" id="input-email" aria-describedby="emailHelp"
+              placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="input-password" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea2">Message:</label>
+            <textarea class="form-control rounded-0" id="text-area" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
   </main>
-
 
   <footer class="page-footer deep-purple darken-3">
     <!-- <div class="container">
@@ -86,6 +118,10 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 
-  </body>
+</body>
+
 </html>

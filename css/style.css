@@ -1,3 +1,37 @@
+#contact-form{
+  margin: auto;
+}
+
+#index-banner{
+  min-width: 100%;
+}
+
+#logo-container{
+  font-size: 3em;
+  font-family: poiret;
+}
+
+#my-pic{
+  float: left;
+  padding-right: 1em;
+}
+
+#main-text, #contact-form, #portfolio-text{
+  padding-left: 1em;
+  border: 2px solid #4527a0 ;
+  text-align: justify;
+  background:#616161;
+  color: white;
+}
+
+
+#contact-form, #portfolio-text{
+  display: none;
+}
+
+#my-brand-statement{
+  padding-right: 1em;
+}
 
 .icon-block {
   padding: 0 15px;
@@ -21,46 +55,17 @@
   color: white;
 }
 
-#my-pic{
-  float: left;
-  padding-right: 1em;
+.project-title{
+  color: white;
 }
 
-#contact-form{
-  margin: auto;
-  /* background: white;
-  opacity: .85; */
-}
-
-#index-banner{
-  min-width: 100%;
-}
-
-#logo-container{
-  font-size: 3em;
-  font-family: poiret;
+.project-title:hover{
+  color: #4527a0;
 }
 
 .title-wrapper{
   border-bottom: 5px solid #4527a0;
   margin: 0 1em 1em 0;
-}
-
-#main-text, #contact-form{
-  padding-left: 1em;
-  border: 2px solid #4527a0 ;
-  text-align: justify;
-  background:#616161;
-  color: white;
-  opacity: .85;
-}
-
-#contact-form{
-  display: none;
-}
-
-#my-brand-statement{
-  padding-right: 1em;
 }
 
 body {
@@ -75,7 +80,6 @@ body {
 
 main {
   flex: 1 0 auto;
-  /* margin: 0 10%; */
 }
 
 nav{
@@ -119,3 +123,9 @@ label{
   src: url(../fonts/PoiretOne-Regular.ttf);
 }
 
+@media screen and (max-width: 640px) {
+    #main-text, #contact-form{
+      margin: 0;
+      width: 100%;
+    }
+}

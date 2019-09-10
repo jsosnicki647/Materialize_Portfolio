@@ -18,4 +18,8 @@ $(document).ready(() => {
         $("#main-text").hide()
         $("#portfolio-text").show()
     })
+
+    $("#nav-mobile").on("click", function () {
+        $(".sidenav-overlay").click()
+    })
 })

@@ -1,4 +1,3 @@
-var nodemailer = require('nodemailer')
 
 $(document).ready(() => {
 
@@ -19,30 +18,5 @@ $(document).ready(() => {
         $("#contact-form").hide()
         $("#main-text").hide()
         $("#portfolio-text").show()
-    })
-
-    $("#btn-email-submit").on("click", () => {
-        var transporter = nodemailer.createTransport({
-            service: 'gmail',
-            auth: {
-                user: 'jesse.sosnicki@gmail.com',
-                pass: 'Romaglia89'
-            }
-        })
-
-        var mailOptions = {
-            from: $("#input-email").val(),
-            to: 'jesse.sosnicki@gmail.com',
-            subject: $("#input-subject").val(),
-            text: $("#text-area").val()
-        }
-
-        transporter.sendMail(mailOptions, function (error, info) {
-            if (error) {
-                console.log(error);
-            } else {
-                console.log('Email sent: ' + info.response);
-            }
-        })
     })
 })

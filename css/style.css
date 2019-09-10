@@ -98,7 +98,7 @@ label{
   margin: 1em 0;
 }
 
-#input-email, #input-password{
+#input-email, #input-subject{
   background: white;
   padding: .375rem;
   width: 97%;

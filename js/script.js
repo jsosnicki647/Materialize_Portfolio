@@ -5,7 +5,6 @@ $(document).ready(() => {
         $("#portfolio-text").hide()
         $("#main-text").hide()
         $("#contact-form").show()
-        console.log("click")
     })
 
     $(".about-page-link").on("click", () => {

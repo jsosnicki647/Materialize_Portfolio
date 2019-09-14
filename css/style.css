@@ -47,6 +47,12 @@
   padding-top: 1em;
 }
 
+.subtitle{
+  font-size: 2em;
+  text-decoration: underline;
+  font-family: prisma;
+}
+
 .nav-link{
   font-size: 1.5em;
   font-family: poiret;
@@ -61,8 +67,12 @@
   color: white;
 }
 
-.project-title:hover{
+.project-title:hover, .source-code:hover{
   color: #4527a0;
+}
+
+.source-code{
+  color: rgb(240, 134, 152);
 }
 
 .title-wrapper{
